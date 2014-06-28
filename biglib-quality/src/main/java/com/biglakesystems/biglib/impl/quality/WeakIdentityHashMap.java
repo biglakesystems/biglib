@@ -1,6 +1,6 @@
-package com.biglakesystems.common.impl.quality;
+package com.biglakesystems.biglib.impl.quality;
 
-import com.biglakesystems.common.quality.Assert;
+import com.biglakesystems.biglib.quality.Assert;
 
 import java.lang.ref.Reference;
 import java.lang.ref.ReferenceQueue;

@@ -1,4 +1,4 @@
-package com.biglakesystems.common.quality;
+package com.biglakesystems.biglib.quality;
 
 /**
  * {@link Assert} provides utility methods for performing assertions against values and properties on objects.

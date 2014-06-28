@@ -1,6 +1,6 @@
-package com.biglakesystems.common.quality;
+package com.biglakesystems.biglib.quality;
 
-import com.biglakesystems.common.impl.quality.WeakIdentityHashMap;
+import com.biglakesystems.biglib.impl.quality.WeakIdentityHashMap;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.StringUtils;
 

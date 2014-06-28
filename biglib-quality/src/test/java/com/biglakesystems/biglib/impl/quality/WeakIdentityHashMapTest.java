@@ -1,4 +1,4 @@
-package com.biglakesystems.common.impl.quality;
+package com.biglakesystems.biglib.impl.quality;
 
 import org.junit.Test;
 
