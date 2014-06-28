@@ -1,0 +1,47 @@
+subprojects {
+    apply plugin: "java"
+    apply plugin: "maven"
+
+    sourceCompatibility = 1.6
+    group = "com.biglakesystems.biglib"
+    version = "1.0-SNAPSHOT"
+
+    /* Emulate Maven "provided" scope. Remove this if/when http://issues.gradle.org/browse/GRADLE-784 is resolved. */
+    configurations {
+        provided
+        compile.extendsFrom provided
+    }
+    /* End Emulate Maven "provided" scope. */
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+
+    dependencies {
+
+        compile(
+                [group: "org.slf4j", name: "slf4j-api", version: "${slf4j_version}"],
+                [group: "commons-io", name: "commons-io", version: "${commons_io_version}"],
+                [group: "org.apache.commons", name: "commons-lang3", version: "${commons_lang3_version}"]
+        )
+
+        runtime(
+                [group: "org.slf4j", name: "jcl-over-slf4j", version: "${slf4j_version}"]
+        )
+
+        testCompile(
+                [group: "org.easymock", name: "easymock", version: "${easymock_version}"],
+                [group: "junit", name: "junit", version: "${junit_version}"]
+        )
+    }
+}
+
+group = "com.biglakesystems.biglib"
+version = "1.0-SNAPSHOT"
+description = "BigLib Libraries"
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.10'
+}
+

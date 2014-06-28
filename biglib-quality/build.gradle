@@ -1,0 +1,11 @@
+
+dependencies {
+
+    compile(
+            [ group: "commons-codec", name: "commons-codec", version: commons_codec_version ]
+    )
+
+    testCompile project(":biglib-test")
+}
+
+description = "BigLib Code Quality Module"
