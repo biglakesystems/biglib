@@ -1,8 +1,0 @@
-<?xml version="1.1" encoding="UTF-8"?>
-<testsuite name="com.biglakesystems.common.quality.AssertTest" tests="2" failures="0" errors="0" timestamp="2014-05-03T18:36:04" hostname="Ariane" time="0.001">
-  <properties/>
-  <testcase name="testPropertyNotSet" classname="com.biglakesystems.common.quality.AssertTest" time="0.001"/>
-  <testcase name="testArgumentNotNull" classname="com.biglakesystems.common.quality.AssertTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
