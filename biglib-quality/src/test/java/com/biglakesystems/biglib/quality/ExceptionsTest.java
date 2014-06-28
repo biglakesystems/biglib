@@ -6,9 +6,18 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * {@link ExceptionsTest} ...
+ * {@link ExceptionsTest} provides unit test coverage for {@link Exceptions}.
  * <p/>
- * Copyright (c) 2014 Big Lake Systems, LLC. All rights reserved.
+ * Copyright 2014 Big Lake Systems, LLC.
+ * <p/>
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * <p/>
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * <p/>
+ * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on
+ * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations under the License.
  */
 public class ExceptionsTest
 {
@@ -42,9 +51,9 @@ public class ExceptionsTest
     }
 
     /**
-     * {@link AlwaysEqualException} is used by {@link #testUniqueId()} to verify that two different exception instances, for
-     * which {@link Object#equals(Object)} returns {@code true}, produce different unique IDs. It implements
-     * {@link #equals(Object)} and {@link #hashCode()} such that any two instances will be considered equal.
+     * {@link AlwaysEqualException} is used by {@link #testUniqueId()} to verify that two different exception instances,
+     * for which {@link Object#equals(Object)} returns {@code true}, produce different unique IDs. It implements {@link
+     * #equals(Object)} and {@link #hashCode()} such that any two instances will be considered equal.
      */
     private static class AlwaysEqualException extends RuntimeException
     {
